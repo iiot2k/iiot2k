@@ -23,10 +23,10 @@ https://www.npmjs.com/package/@iiot2k/ads1115
 >ds18b20 temperature sensor library connected on any gpio pin
 https://www.npmjs.com/package/@iiot2k/ds18b20<br>
 
->hdc1080 temperature and humidity sensor library
+>hdc1080 temperature and humidity sensor library<br>
 https://www.npmjs.com/package/@iiot2k/hdc1080<br>
 
->sht40 (sht41 and sht45) temperature and humidity sensor
+>sht40 (sht41 and sht45) temperature and humidity sensor<br>
 https://www.npmjs.com/package/@iiot2k/sht40<br>
 
 ### Libraries for the Raspberry Pico
