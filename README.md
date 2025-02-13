@@ -14,8 +14,14 @@ The libraries can be installed from the npm package manager.<br>
 
 The following libraries exist:<br>
 
->Raspberry Pi gpio library<br>
+>Raspberry Pi gpio library (on work)<br>
 https://www.npmjs.com/package/@iiot2k/gpiox<br>
+
+>software pwm on any gpio library<br>
+https://www.npmjs.com/package/@iiot2k/swpwm
+
+>watch changes on any gpio library<br>
+https://www.npmjs.com/package/@iiot2k/gpiowatch
 
 >ads1115 analog to digital converter library<br>
 https://www.npmjs.com/package/@iiot2k/ads1115
@@ -30,8 +36,6 @@ https://www.npmjs.com/package/@iiot2k/hdc1080<br>
 https://www.npmjs.com/package/@iiot2k/sht40<br>
 
 ### Libraries for the Raspberry Pico
-The libraries are old but valid.<br>
-If I find time, I will expand and update them.<br>
 The following libraries exist:<br>
 
 >Lib2 - C/C++ Library for Raspberry Pi Pico<br>
