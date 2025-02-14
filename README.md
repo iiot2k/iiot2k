@@ -13,7 +13,8 @@ Due to time constraints, I only support the 64 bit version of the Raspberry Pi o
 The libraries can be installed from the npm package manager.<br>
 For issues to libraries please use the following link:<br>
 https://github.com/iiot2k/iiot2k/issues<br>
-Please also mention the name of the library in issue.<br>
+Please also mention the name of the library,<br>
+used Raspberry Pi model, OS version and Node.js version in issue.<br>
 
 The following libraries exist:<br>
 
