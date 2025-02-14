@@ -6,15 +6,14 @@
 
 If you like my work and find it helpful, please support me with buy me a coffee.
 
-For issues to libraries please use the following link:<br>
-https://github.com/iiot2k/iiot2k/issues<br>
-Please also mention the name of the library in issue.<br>
-
 ### Libraries for the Raspberry Pi
 The libraries are written in JavaScript and TypeScript for Node.js.<br>
 For performance reasons, the hardware accesses are written as an addon in C++.<br>
 Due to time constraints, I only support the 64 bit version of the Raspberry Pi operating system.<br>
 The libraries can be installed from the npm package manager.<br>
+For issues to libraries please use the following link:<br>
+https://github.com/iiot2k/iiot2k/issues<br>
+Please also mention the name of the library in issue.<br>
 
 The following libraries exist:<br>
 
