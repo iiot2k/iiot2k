@@ -9,17 +9,20 @@ If you like my work and find it helpful, please support me with buy me a coffee.
 ### Libraries for the Raspberry Pi
 The libraries are written in JavaScript and TypeScript for Node.js.<br>
 For performance reasons, the hardware accesses are written as an addon in C++.<br>
+Some libraries also have a C++ library.<br>
 Due to time constraints, I only support the 64 bit version of the Raspberry Pi operating system.<br>
 The libraries can be installed from the npm package manager.<br>
+<br>
 For issues to libraries please use the following link:<br>
 https://github.com/iiot2k/iiot2k/issues<br>
-Please also mention the name of the library,<br>
+Please also mention the name and type of the library,<br>
 used Raspberry Pi model, OS version and Node.js version in issue.<br>
 
 The following libraries exist:<br>
 
->Raspberry Pi gpio library (on work)<br>
-https://www.npmjs.com/package/@iiot2k/gpiox<br>
+>Input/Output on any gpio library<br>
+Node.js library: https://www.npmjs.com/package/@iiot2k/gpiox<br>
+C++ library: https://github.com/iiot2k/iiot2k/gpiox
 
 >software pwm on any gpio library<br>
 https://www.npmjs.com/package/@iiot2k/swpwm
