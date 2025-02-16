@@ -22,25 +22,25 @@ The following libraries exist:<br>
 
 >Input/Output on any gpio library<br>
 Node.js library: https://www.npmjs.com/package/@iiot2k/gpiox<br>
-C++ library: https://github.com/iiot2k/iiot2k/gpiox
+C++ library: https://github.com/iiot2k/iiot2k/tree/main/gpiox
 
 >software pwm on any gpio library<br>
-https://www.npmjs.com/package/@iiot2k/swpwm
+Node.js library: https://www.npmjs.com/package/@iiot2k/swpwm
 
 >watch changes on any gpio library<br>
-https://www.npmjs.com/package/@iiot2k/gpiowatch
+Node.js library: https://www.npmjs.com/package/@iiot2k/gpiowatch
 
 >ads1115 analog to digital converter library<br>
-https://www.npmjs.com/package/@iiot2k/ads1115
+Node.js library: https://www.npmjs.com/package/@iiot2k/ads1115
 
 >ds18b20 temperature sensor library connected on any gpio pin
-https://www.npmjs.com/package/@iiot2k/ds18b20<br>
+Node.js library: https://www.npmjs.com/package/@iiot2k/ds18b20<br>
 
 >hdc1080 temperature and humidity sensor library<br>
-https://www.npmjs.com/package/@iiot2k/hdc1080<br>
+Node.js library: https://www.npmjs.com/package/@iiot2k/hdc1080<br>
 
 >sht40 (sht41 and sht45) temperature and humidity sensor<br>
-https://www.npmjs.com/package/@iiot2k/sht40<br>
+Node.js library: https://www.npmjs.com/package/@iiot2k/sht40<br>
 
 ### Libraries for the Raspberry Pico
 The following libraries exist:<br>
