@@ -57,6 +57,9 @@ https://github.com/iiot2k/raspi_cpp_library/tree/main/gpiowatch<br>
 >ds18b20 temperature sensor library connected on any gpio pin
 https://github.com/iiot2k/raspi_cpp_library/tree/main/ds18b20<br>
 
+>ads1115 analog to digital converter library<br>
+https://github.com/iiot2k/raspi_cpp_library/tree/main/ads1115
+
 >gpio C++ addon example<br>
 https://github.com/iiot2k/raspi_cpp_library/tree/main/gpiox_lite<br>
 
