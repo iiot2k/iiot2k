@@ -54,6 +54,9 @@ https://github.com/iiot2k/raspi_cpp_library/tree/main/swpwm<br>
 >watch changes on any gpio library<br>
 https://github.com/iiot2k/raspi_cpp_library/tree/main/gpiowatch<br>
 
+>Raspberry Pi gpio node.js C++ addon example<br>
+https://github.com/iiot2k/raspi_cpp_library/tree/main/gpiox_lite<br>
+
 ### C++ Libraries for the Raspberry Pico
 
 >Lib2 - C/C++ Library for Raspberry Pi Pico<br>
