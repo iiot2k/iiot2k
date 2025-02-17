@@ -6,7 +6,7 @@
 
 If you like my work and find it helpful, please support me with buy me a coffee.
 
-### Libraries for the Raspberry Pi
+### Node.js Libraries for the Raspberry Pi
 The libraries are written in JavaScript and TypeScript for Node.js.<br>
 For performance reasons, the hardware accesses are written as an addon in C++.<br>
 Due to time constraints, I only support the 64 bit version of the Raspberry Pi operating system.<br>
@@ -16,8 +16,6 @@ For issues to libraries please use the following link:<br>
 https://github.com/iiot2k/iiot2k/issues<br>
 Please also mention the name and type of the library,<br>
 used Raspberry Pi model, OS version and Node.js version in issue.<br>
-
-The following libraries exist:<br>
 
 >Input/Output on any gpio library<br>
 https://www.npmjs.com/package/@iiot2k/gpiox<br>
@@ -40,8 +38,17 @@ https://www.npmjs.com/package/@iiot2k/hdc1080<br>
 >sht40 (sht41 and sht45) temperature and humidity sensor<br>
 https://www.npmjs.com/package/@iiot2k/sht40<br>
 
-### Libraries for the Raspberry Pico
-The following libraries exist:<br>
+### C++ Libraries for the Raspberry Pi
+
+For issues to libraries please use the following link:<br>
+https://github.com/iiot2k/raspi_cpp_library/issues<br>
+Please also mention the name and type of the library,<br>
+used Raspberry Pi model, OS version and compiler version in issue.<br>
+
+>Input/Output on any gpio library<br>
+https://github.com/iiot2k/raspi_cpp_library/tree/main/gpiox
+
+### C++ Libraries for the Raspberry Pico
 
 >Lib2 - C/C++ Library for Raspberry Pi Pico<br>
 https://github.com/iiot2k/pico-lib2<br>
