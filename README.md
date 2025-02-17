@@ -46,7 +46,13 @@ Please also mention the name and type of the library,<br>
 used Raspberry Pi model, OS version and compiler version in issue.<br>
 
 >Input/Output on any gpio library<br>
-https://github.com/iiot2k/raspi_cpp_library/tree/main/gpiox
+https://github.com/iiot2k/raspi_cpp_library/tree/main/gpiox<br>
+
+>software pwm on any gpio library<br>
+https://github.com/iiot2k/raspi_cpp_library/tree/main/swpwm<br>
+
+>watch changes on any gpio library<br>
+https://github.com/iiot2k/raspi_cpp_library/tree/main/gpiowatch<br>
 
 ### C++ Libraries for the Raspberry Pico
 
