@@ -29,7 +29,7 @@ https://www.npmjs.com/package/@iiot2k/gpiowatch
 >ads1115 analog to digital converter library<br>
 https://www.npmjs.com/package/@iiot2k/ads1115
 
->ds18b20 temperature sensor library connected on any gpio pin
+>ds18b20 temperature sensor library connected on any gpio pin<br>
 library: https://www.npmjs.com/package/@iiot2k/ds18b20<br>
 
 >hdc1080 temperature and humidity sensor library<br>
@@ -37,6 +37,10 @@ https://www.npmjs.com/package/@iiot2k/hdc1080<br>
 
 >sht40 (sht41 and sht45) temperature and humidity sensor<br>
 https://www.npmjs.com/package/@iiot2k/sht40<br>
+
+>mcp23017/mcp23008 I/O expander library<br>
+https://www.npmjs.com/package/@iiot2k/mcp23017<br>
+
 
 ### C++ Libraries for the Raspberry Pi
 
@@ -59,6 +63,9 @@ https://github.com/iiot2k/raspi_cpp_library/tree/main/ds18b20<br>
 
 >ads1115 analog to digital converter library<br>
 https://github.com/iiot2k/raspi_cpp_library/tree/main/ads1115
+
+>mcp23017/mcp23008 I/O expander library<br>
+https://github.com/iiot2k/raspi_cpp_library/tree/main/mcp23017<br>
 
 >gpio C++ addon example<br>
 https://github.com/iiot2k/raspi_cpp_library/tree/main/gpiox_lite<br>
