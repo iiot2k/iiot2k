@@ -41,35 +41,6 @@ https://www.npmjs.com/package/@iiot2k/sht40<br>
 >mcp23017/mcp23008 I/O expander library<br>
 https://www.npmjs.com/package/@iiot2k/mcp23017<br>
 
-
-### C++ Libraries for the Raspberry Pi
-
-For issues to libraries please use the following link:<br>
-https://github.com/iiot2k/raspi_cpp_library/issues<br>
-Please also mention the name and type of the library,<br>
-used Raspberry Pi model, OS version and compiler version in issue.<br>
-
->Input/Output on any gpio library<br>
-https://github.com/iiot2k/raspi_cpp_library/tree/main/gpiox<br>
-
->software pwm on any gpio library<br>
-https://github.com/iiot2k/raspi_cpp_library/tree/main/swpwm<br>
-
->watch changes on any gpio library<br>
-https://github.com/iiot2k/raspi_cpp_library/tree/main/gpiowatch<br>
-
->ds18b20 temperature sensor library connected on any gpio pin
-https://github.com/iiot2k/raspi_cpp_library/tree/main/ds18b20<br>
-
->ads1115 analog to digital converter library<br>
-https://github.com/iiot2k/raspi_cpp_library/tree/main/ads1115
-
->mcp23017/mcp23008 I/O expander library<br>
-https://github.com/iiot2k/raspi_cpp_library/tree/main/mcp23017<br>
-
->gpio C++ addon example<br>
-https://github.com/iiot2k/raspi_cpp_library/tree/main/gpiox_lite<br>
-
 ### C++ Libraries for the Raspberry Pico
 
 >Lib2 - C/C++ Library for Raspberry Pi Pico<br>
