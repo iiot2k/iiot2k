@@ -23,9 +23,6 @@ https://www.npmjs.com/package/@iiot2k/gpiox<br>
 >software pwm on any gpio library<br>
 https://www.npmjs.com/package/@iiot2k/swpwm
 
->watch changes on any gpio library<br>
-https://www.npmjs.com/package/@iiot2k/gpiowatch
-
 >ads1115 analog to digital converter library<br>
 https://www.npmjs.com/package/@iiot2k/ads1115
 
