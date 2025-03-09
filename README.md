@@ -38,7 +38,7 @@ https://www.npmjs.com/package/@iiot2k/mcp23017<br>
 >pcf8575/pcf8574 I/O expander library<br>
 https://www.npmjs.com/package/@iiot2k/pcf8575<br>
 
->hx711 24-Bit ADC for weight scales<br>
+>hx711 24-Bit analog to digital converter for weight scales<br>
 https://www.npmjs.com/package/@iiot2k/hx711<br>
 
 ### C++ Libraries for the Raspberry Pico
