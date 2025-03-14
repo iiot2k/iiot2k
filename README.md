@@ -4,12 +4,7 @@
 
 <a href="https://www.buymeacoffee.com/iiot2ka" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-blue.png" height="41" width="174"></a><br>
 
-If you like my work and find it helpful, please support me with buy me a coffee.
-
 ### Node.js Libraries for the Raspberry Pi
-The libraries are written in JavaScript and TypeScript for Node.js.<br>
-For performance reasons, the hardware accesses are written as an addon in C++.<br>
-Due to time constraints, I only support the 64 bit version of the Raspberry Pi operating system.<br>
 The libraries can be installed from the npm package manager.<br>
 <br>
 For issues to libraries please use the following link:<br>
