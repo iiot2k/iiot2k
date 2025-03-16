@@ -5,15 +5,18 @@
 <a href="https://www.buymeacoffee.com/iiot2ka" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-blue.png" height="41" width="174"></a><br>
 
 ### Node.js Libraries for the Raspberry Pi
-The libraries can be installed from the npm package manager.<br>
+The libraries can be installed with the npm package manager.<br>
 <br>
 For issues to libraries please use the following link:<br>
 https://github.com/iiot2k/iiot2k/issues<br>
-Please also mention the name and type of the library,<br>
+Please also mention the name aof the library,<br>
 used Raspberry Pi model, OS version and Node.js version in issue.<br>
 
 >Input/Output on any gpio library<br>
 https://www.npmjs.com/package/@iiot2k/gpiox<br>
+
+>monitor changes on any gpio library<br>
+https://www.npmjs.com/package/@iiot2k/gpiomon
 
 >software pwm on any gpio library<br>
 https://www.npmjs.com/package/@iiot2k/swpwm
