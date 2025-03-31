@@ -9,7 +9,7 @@ The libraries can be installed with the npm package manager.<br>
 <br>
 For issues to libraries please use the following link:<br>
 https://github.com/iiot2k/iiot2k/issues<br>
-Please also mention the name aof the library,<br>
+Please also mention the name of the library,<br>
 used Raspberry Pi model, OS version and Node.js version in issue.<br>
 
 >Input/Output on any gpio library<br>
@@ -38,6 +38,17 @@ https://www.npmjs.com/package/@iiot2k/pcf8575<br>
 
 >hx711 24-Bit analog to digital converter for weight scales<br>
 https://www.npmjs.com/package/@iiot2k/hx711<br>
+
+### Node-Red Nodes for the Raspberry Pi
+The Nodes can be installed with the npm package manager or palette manager.<br>
+<br>
+For issues to libraries please use the following link:<br>
+https://github.com/iiot2k/iiot2k/issues<br>
+Please also mention the name of the Node,<br>
+used Raspberry Pi model, OS version and Node.js version in issue.<br>
+
+>Node-RED nodes for Raspberry Pi gpio<br>
+https://www.npmjs.com/package/@iiot2k/node-red-gpio<br>
 
 ### C++ Libraries for the Raspberry Pico
 
