@@ -1,0 +1,10 @@
+{
+    "name": "gpiox",
+    "version": "1.0.0",
+    "description": "node.js addon gpiox",
+    "main": "",
+    "dependencies": {
+        "node-addon-api": "*"
+    },
+    "gypfile": true
+}

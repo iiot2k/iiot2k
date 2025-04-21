@@ -1,0 +1,7 @@
+Copy all files to a folder on Raspberry Pi (e.g. /home/pi/gpiox).<br>
+
+Change to this folder:
+> cd /home/pi/gpiox
+
+Build addon:
+> npm install
