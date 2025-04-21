@@ -1,5 +1,5 @@
 /*
- * constants for gpiowatch
+ * constants for gpio_mon
  *
  * (c) Derya Y. iiot2k@gmail.com
  *
