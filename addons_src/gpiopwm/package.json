@@ -2,6 +2,11 @@
     "name": "gpiopwm",
     "version": "1.0.0",
     "description": "node.js addon gpiopwm",
+    "author": {
+        "name": "Derya Y.",
+        "email": "iiot2k@gmail.com"
+      },
+    "license": "MIT",
     "main": "",
     "dependencies": {
         "node-addon-api": "*"

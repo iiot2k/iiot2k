@@ -2,6 +2,11 @@
     "name": "gpiox",
     "version": "1.0.0",
     "description": "node.js addon gpiox",
+    "author": {
+        "name": "Derya Y.",
+        "email": "iiot2k@gmail.com"
+      },
+    "license": "MIT",
     "main": "",
     "dependencies": {
         "node-addon-api": "*"
