@@ -1,0 +1,10 @@
+{
+    "name": "gpio_mon",
+    "version": "1.0.0",
+    "description": "node.js addon gpio_mon",
+    "main": "",
+    "dependencies": {
+        "node-addon-api": "*"
+    },
+    "gypfile": true
+}

@@ -1,0 +1,7 @@
+Copy all files to a folder on Raspberry Pi (e.g. /home/pi/gpio_mon).<br>
+
+Change to this folder:
+> cd /home/pi/gpio_mon
+
+Build addon:
+> npm install
