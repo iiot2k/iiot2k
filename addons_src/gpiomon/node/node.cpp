@@ -66,7 +66,7 @@ Value deinit_gpio(const CallbackInfo &info)
     if (pin >= N_PIN)
     {
         set_error(ERR_PIN);
-    	return Boolean::New(info.Env(), false);
+        return Boolean::New(info.Env(), false);
     }
 
     gpio_item[pin].deinit();
@@ -78,38 +78,38 @@ Value deinit_gpio(const CallbackInfo &info)
 class c_gpio_watch : public c_worker
 {
 public:
-	c_gpio_watch(c_gpio* gpio, c_tsqueue<s_gpio_event*>* ptsqueue)
-	{
-		m_gpio = gpio;
-		m_ptsqueue = ptsqueue;
-	}
-
-	~c_gpio_watch() {}
-
-	void Execute()
+    c_gpio_watch(c_gpio* gpio, c_tsqueue<s_gpio_event*>* ptsqueue)
     {
-		s_gpio_event gpio_event;
+        m_gpio = gpio;
+        m_ptsqueue = ptsqueue;
+    }
 
-		// wait until gpio changes or stop request
+    ~c_gpio_watch() {}
+
+    void Execute()
+    {
+        s_gpio_event gpio_event;
+
+        // wait until gpio changes or stop request
         while(m_gpio->watch(gpio_event))
         {
-        	s_gpio_event* pevent = new s_gpio_event;
+            s_gpio_event* pevent = new s_gpio_event;
 
-        	if (pevent == NULL)
-        	{
-        		break;
-        	}
+            if (pevent == NULL)
+            {
+                break;
+            }
 
-			pevent->pin = gpio_event.pin;
-			pevent->state = gpio_event.state;
-			pevent->edge = gpio_event.edge;
+            pevent->pin = gpio_event.pin;
+            pevent->state = gpio_event.state;
+            pevent->edge = gpio_event.edge;
 
-			// add event to queue
-			m_ptsqueue->Push(pevent);
+            // add event to queue
+            m_ptsqueue->Push(pevent);
         }
 
         // inform main watch thread for stop
-		m_ptsqueue->Push(NULL);
+        m_ptsqueue->Push(NULL);
     }
 
 private:
@@ -121,9 +121,9 @@ private:
 class c_gpio_watch_main : public c_worker
 {
 public:
-	c_gpio_watch_main(Env& env, Function& cb, c_gpio* gpio)
+    c_gpio_watch_main(Env& env, Function& cb, c_gpio* gpio)
     {
-		m_gpio = gpio;
+        m_gpio = gpio;
         m_threadSafeCallback = ThreadSafeFunction::New(env, cb, "Watch CB", 0, 1);
     }
 
@@ -134,29 +134,29 @@ public:
         auto callback = [](Env env, Function jsCallback, s_gpio_event* event)
         {
               jsCallback.Call({
-            	  Number::New(env, event->pin),
+                  Number::New(env, event->pin),
                   Number::New(env, event->state),
-            	  Number::New(env, event->edge)
+                  Number::New(env, event->edge)
               });
 
               delete (s_gpio_event*) event;
         };
 
         // start gpio watch thread
-		c_gpio_watch* wk = new c_gpio_watch(m_gpio, &m_tsqueue);
+        c_gpio_watch* wk = new c_gpio_watch(m_gpio, &m_tsqueue);
         wk->Queue();
 
         while(1)
         {
-        	// wait until event on queue
+            // wait until event on queue
             s_gpio_event* pevent = m_tsqueue.Pop();
 
             // is stop signal ?
-        	if (pevent == NULL)
-        		break;
+            if (pevent == NULL)
+                break;
 
-        	// call callback
-			m_threadSafeCallback.NonBlockingCall(pevent, callback);
+            // call callback
+            m_threadSafeCallback.NonBlockingCall(pevent, callback);
         }
 
         m_threadSafeCallback.Release();
@@ -203,7 +203,7 @@ Value monitor_gpio(const CallbackInfo &info)
     // check if gpio already init
     if (gpio_item[pin].isinit())
     {
-    	set_error(ERR_ISINIT);
+        set_error(ERR_ISINIT);
         return Boolean::New(info.Env(), false);
     }
 
@@ -242,7 +242,7 @@ Value read_gpio(const CallbackInfo &info)
     // check if gpio init
     if (!gpio_item[pin].isinit())
     {
-    	set_error(ERR_ISNOINIT);
+        set_error(ERR_ISNOINIT);
         return env.Undefined();
     }
 

@@ -16,21 +16,21 @@ class c_guard
 {
 public:
 
-	// lock on constructor call
-	c_guard(mutex* mtx)
-	{
-		m_mtx = mtx;
+    // lock on constructor call
+    c_guard(mutex* mtx)
+    {
+        m_mtx = mtx;
 
-		if (m_mtx != NULL)
-			m_mtx->lock();
-	}
+        if (m_mtx != NULL)
+            m_mtx->lock();
+    }
 
-	// unlock on destructor call
-	~c_guard()
-	{
-		if (m_mtx != NULL)
-			m_mtx->unlock();
-	}
+    // unlock on destructor call
+    ~c_guard()
+    {
+        if (m_mtx != NULL)
+            m_mtx->unlock();
+    }
 
 private:
     mutex* m_mtx;

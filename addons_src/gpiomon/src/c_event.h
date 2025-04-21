@@ -37,20 +37,20 @@ public:
     // check for event
     bool poll_handle()
     {
-		pollfd pfd[2];
-		pfd[0].fd = m_fd; pfd[0].events = POLLIN; pfd[0].revents = 0;
-		pfd[1].fd = m_fd2; pfd[1].events = POLLIN; pfd[1].revents = 0;
+        pollfd pfd[2];
+        pfd[0].fd = m_fd; pfd[0].events = POLLIN; pfd[0].revents = 0;
+        pfd[1].fd = m_fd2; pfd[1].events = POLLIN; pfd[1].revents = 0;
 
-		if (poll(pfd, 2, -1) <= 0)
-	    	return false;
+        if (poll(pfd, 2, -1) <= 0)
+            return false;
 
-	    if (pfd[0].revents >= POLLIN)
-	    	return false;
+        if (pfd[0].revents >= POLLIN)
+            return false;
 
-	    return pfd[1].revents >= POLLIN;
+        return pfd[1].revents >= POLLIN;
     }
 
-	// acknowledge stop
+    // acknowledge stop
     inline void ack_stop() { eventfd_write(m_fd_ack_stop, 1); }
 
     // stop wait and waits ms
@@ -59,8 +59,8 @@ public:
     // if t_ms is negative, then waits infinite
     bool stop(int32_t t_ms = -1)
     {
-    	eventfd_write(m_fd, 1);
-		pollfd pfd = { .fd = m_fd_ack_stop, .events = POLLIN, .revents = 0 };
+        eventfd_write(m_fd, 1);
+        pollfd pfd = { .fd = m_fd_ack_stop, .events = POLLIN, .revents = 0 };
         return poll(&pfd, 1, t_ms) > 0;
     }
 

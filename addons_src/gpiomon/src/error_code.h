@@ -16,7 +16,7 @@ enum {
     ERR_PARAMETER,
     ERR_PIN,
     ERR_ISNOINIT,
-	ERR_ISINIT,
+    ERR_ISINIT,
 
     ERR_SYS = 1000,
     ERR_CHIP,

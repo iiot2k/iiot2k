@@ -38,12 +38,12 @@ public:
 
         // open chip0 if chip4 not open
         if (m_fd == -1)
-        	m_fd = open(CHIPNAME_CHIP0, O_RDWR | O_CLOEXEC);
+            m_fd = open(CHIPNAME_CHIP0, O_RDWR | O_CLOEXEC);
     };
 
     ~c_chip()
     {
-    	// close chip handle
+        // close chip handle
         if (m_fd != -1)
             close(m_fd);
     };
@@ -82,17 +82,17 @@ bool c_gpio::init_gpio(uint32_t mode, uint32_t debounce, uint32_t edge)
     // set gpio parameter
     switch(mode)
     {
-	case GPIO_MODE_INPUT_NOPULL:
-		line_request.config.flags = GPIO_V2_LINE_FLAG_INPUT + GPIO_V2_LINE_FLAG_BIAS_DISABLED;
+    case GPIO_MODE_INPUT_NOPULL:
+        line_request.config.flags = GPIO_V2_LINE_FLAG_INPUT + GPIO_V2_LINE_FLAG_BIAS_DISABLED;
         break;
 
     default:
     case GPIO_MODE_INPUT_PULLDOWN:
-    	line_request.config.flags = GPIO_V2_LINE_FLAG_INPUT + GPIO_V2_LINE_FLAG_BIAS_PULL_DOWN;
+        line_request.config.flags = GPIO_V2_LINE_FLAG_INPUT + GPIO_V2_LINE_FLAG_BIAS_PULL_DOWN;
         break;
 
     case GPIO_MODE_INPUT_PULLUP:
-    	line_request.config.flags = GPIO_V2_LINE_FLAG_INPUT + GPIO_V2_LINE_FLAG_BIAS_PULL_UP + GPIO_V2_LINE_FLAG_ACTIVE_LOW;
+        line_request.config.flags = GPIO_V2_LINE_FLAG_INPUT + GPIO_V2_LINE_FLAG_BIAS_PULL_UP + GPIO_V2_LINE_FLAG_ACTIVE_LOW;
         break;
     }
 
@@ -107,14 +107,14 @@ bool c_gpio::init_gpio(uint32_t mode, uint32_t debounce, uint32_t edge)
     switch(edge)
     {
     case GPIO_EDGE_RISING:
-    	line_request.config.flags += GPIO_V2_LINE_FLAG_EDGE_RISING;
+        line_request.config.flags += GPIO_V2_LINE_FLAG_EDGE_RISING;
         break;
     case GPIO_EDGE_FALLING:
-    	line_request.config.flags += GPIO_V2_LINE_FLAG_EDGE_FALLING;
+        line_request.config.flags += GPIO_V2_LINE_FLAG_EDGE_FALLING;
         break;
     default:
     case GPIO_EDGE_BOTH:
-    	line_request.config.flags += GPIO_V2_LINE_FLAG_EDGE_RISING + GPIO_V2_LINE_FLAG_EDGE_FALLING;
+        line_request.config.flags += GPIO_V2_LINE_FLAG_EDGE_RISING + GPIO_V2_LINE_FLAG_EDGE_FALLING;
         break;
     }
 
@@ -135,7 +135,7 @@ bool c_gpio::init_gpio(uint32_t mode, uint32_t debounce, uint32_t edge)
 
 c_gpio::~c_gpio()
 {
-	m_event.stop();
+    m_event.stop();
 
     // close pin handle if open
     if (m_fd != -1)
@@ -148,7 +148,7 @@ static mutex mtx; // lock mutex
 
 bool c_gpio::read(uint32_t& val)
 {
-	c_guard guard(&mtx);
+    c_guard guard(&mtx);
 
     gpio_v2_line_values line_values;
     line_values.mask = 1;
@@ -171,28 +171,28 @@ bool c_gpio::watch(s_gpio_event& gpio_event)
 
     while(1)
     {
-    	// check if data to read
-    	if (!m_event.poll_handle())
-    		return false;
+        // check if data to read
+        if (!m_event.poll_handle())
+            return false;
 
-    	// read event data
-		int32_t ret = ::read(m_fd, &event_data, sizeof(event_data));
+        // read event data
+        int32_t ret = ::read(m_fd, &event_data, sizeof(event_data));
 
-		// check retun code
-		if (ret == -1)
-		{
-			// read again
-			if (errno == -EAGAIN)
-				continue;
-			else
-				return false;
-		}
+        // check retun code
+        if (ret == -1)
+        {
+            // read again
+            if (errno == -EAGAIN)
+                continue;
+            else
+                return false;
+        }
 
-		// check if read all data
-		if (ret != sizeof(event_data))
-			return false;
+        // check if read all data
+        if (ret != sizeof(event_data))
+            return false;
 
-		break;
+        break;
     }
 
     gpio_event.pin = m_pin;
@@ -201,17 +201,17 @@ bool c_gpio::watch(s_gpio_event& gpio_event)
     switch(event_data.id)
     {
     case GPIO_V2_LINE_EVENT_RISING_EDGE:
-    	gpio_event.edge = GPIO_EDGE_RISING;
+        gpio_event.edge = GPIO_EDGE_RISING;
         break;
     case GPIO_V2_LINE_EVENT_FALLING_EDGE:
-    	gpio_event.edge = GPIO_EDGE_FALLING;
+        gpio_event.edge = GPIO_EDGE_FALLING;
         break;
     default:
         return set_error(ERR_SYS);
     }
 
     // read input state
-	if (!read(gpio_event.state))
+    if (!read(gpio_event.state))
         return set_error(ERR_SYS);
 
     return true;

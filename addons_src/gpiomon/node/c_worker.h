@@ -15,7 +15,7 @@ using namespace std;
 class c_worker
 {
 public:
-	// worker destructor
+    // worker destructor
     virtual ~c_worker() {}
 
     // called once in thread, overwrite on derived class

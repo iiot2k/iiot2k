@@ -72,17 +72,17 @@ private:
 class c_gpioitem
 {
 public:
-	c_gpioitem()
+    c_gpioitem()
     {
-		m_gpio = NULL;
-	    m_mode = 0;
-	    m_debounce = 0;
-	    m_edge = 0;
+        m_gpio = NULL;
+        m_mode = 0;
+        m_debounce = 0;
+        m_edge = 0;
     }
 
     ~c_gpioitem()
     {
-    	deinit();
+        deinit();
     }
 
     // deinit gpio
@@ -100,32 +100,32 @@ public:
     {
         if (m_gpio != NULL)
         {
-        	// check if data changed
+            // check if data changed
             if ((m_mode != mode) || (m_debounce != debounce) || (m_edge != edge))
-            	deinit();
+                deinit();
             else
-            	return set_error(ERR_ISINIT);
+                return set_error(ERR_ISINIT);
         }
 
         m_gpio = new c_gpio(pin);
 
-		if (m_gpio == NULL)
-			return set_error(ERR_SYS);
-		else if (!m_gpio->init_gpio(mode, debounce, edge))
-			return false;
+        if (m_gpio == NULL)
+            return set_error(ERR_SYS);
+        else if (!m_gpio->init_gpio(mode, debounce, edge))
+            return false;
 
-		m_mode = mode;
-	    m_debounce = debounce;
-	    m_edge = edge;
+        m_mode = mode;
+        m_debounce = debounce;
+        m_edge = edge;
 
-	    return true;
+        return true;
     }
 
     // read gpio state
     bool read(uint32_t& val)
     {
         if (m_gpio == NULL)
-        	return false;
+            return false;
 
         return m_gpio->read(val);
     }
@@ -133,7 +133,7 @@ public:
     // check if gpio init
     bool isinit()
     {
-    	return (m_gpio != NULL);
+        return (m_gpio != NULL);
     }
 
     uint32_t m_mode;

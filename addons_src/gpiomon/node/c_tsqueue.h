@@ -22,14 +22,14 @@ template <typename T>
 class c_tsqueue {
 
 public:
-	// frees all items
-	~c_tsqueue()
-	{
-    	while(!m_queue.empty())
-    		delete (T) m_queue.front();
-	}
+    // frees all items
+    ~c_tsqueue()
+    {
+        while(!m_queue.empty())
+            delete (T) m_queue.front();
+    }
 
-	// add item to queue bottom
+    // add item to queue bottom
     void Push(T item)
     {
         unique_lock<mutex> lock(m_mutex);
