@@ -1,0 +1,10 @@
+{
+    "name": "gpiopwm",
+    "version": "1.0.0",
+    "description": "node.js addon gpiopwm",
+    "main": "",
+    "dependencies": {
+        "node-addon-api": "*"
+    },
+    "gypfile": true
+}
