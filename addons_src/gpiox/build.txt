@@ -1,4 +1,4 @@
-Copy all files to a folder on Raspberry Pi (e.g. /home/pi/gpiox).<br>
+Copy all files to a folder on Raspberry Pi (e.g. /home/pi/gpiox)
 
 Change to this folder:
 > cd /home/pi/gpiox
