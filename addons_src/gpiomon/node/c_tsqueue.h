@@ -26,7 +26,10 @@ public:
     ~c_tsqueue()
     {
         while(!m_queue.empty())
+        {
             delete (T) m_queue.front();
+            m_queue.pop();
+        }
     }
 
     // add item to queue bottom
