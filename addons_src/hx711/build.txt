@@ -1,0 +1,7 @@
+Copy all files to a folder on Raspberry Pi (e.g. /home/pi/hx711)
+
+Change to this folder:
+> cd /home/pi/hx711
+
+Build addon:
+> npm install
