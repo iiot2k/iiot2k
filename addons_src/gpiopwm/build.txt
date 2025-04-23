@@ -1,7 +1,0 @@
-Copy all files to a folder on Raspberry Pi (e.g. /home/pi/gpiopwm)
-
-Change to this folder:
-> cd /home/pi/gpiopwm
-
-Build addon:
-> npm install
