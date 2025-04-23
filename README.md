@@ -53,6 +53,10 @@ used Raspberry Pi model, OS version and Node.js version in issue.<br>
 >Node-RED nodes for Raspberry Pi gpio<br>
 https://www.npmjs.com/package/@iiot2k/node-red-gpio<br>
 
+### C++ Libraries for the Raspberry Pi
+>libgpiox C++ GPIO Library for Raspberry Pi<br>
+https://github.com/iiot2k/libgpiox<br>
+
 ### C++ Libraries for the Raspberry Pico
 
 >Lib2 - C/C++ Library for Raspberry Pi Pico<br>
