@@ -21,23 +21,8 @@ https://www.npmjs.com/package/@iiot2k/gpiox<br>
 >monitor changes on any gpio library<br>
 https://www.npmjs.com/package/@iiot2k/gpiomon
 
->pwm on any gpio library<br>
-https://www.npmjs.com/package/@iiot2k/gpiopwm
-
->ads1115 analog to digital converter library<br>
-https://www.npmjs.com/package/@iiot2k/ads1115
-
->ds18b20 temperature sensor library connected on any gpio pin<br>
-https://www.npmjs.com/package/@iiot2k/ds18b20<br>
-
 >sht40 (sht41 and sht45) temperature and humidity sensor<br>
 https://www.npmjs.com/package/@iiot2k/sht40<br>
-
->mcp23017/mcp23008 I/O expander library<br>
-https://www.npmjs.com/package/@iiot2k/mcp23017<br>
-
->pcf8575/pcf8574 I/O expander library<br>
-https://www.npmjs.com/package/@iiot2k/pcf8575<br>
 
 >hx711 24-Bit analog to digital converter for weight scales<br>
 https://www.npmjs.com/package/@iiot2k/hx711<br>
