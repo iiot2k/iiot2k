@@ -12,9 +12,6 @@ https://github.com/iiot2k/iiot2k/issues<br>
 Please also mention the name of the library,<br>
 used Raspberry Pi model, OS version and Node.js version in issue.<br>
 
-Some addon sources are here:<br>
-https://github.com/iiot2k/addons_src<br>
-
 >Input/Output on any gpio library<br>
 https://www.npmjs.com/package/@iiot2k/gpiox<br>
 
