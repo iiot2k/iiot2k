@@ -18,12 +18,6 @@ https://www.npmjs.com/package/@iiot2k/gpiox<br>
 >monitor changes on any gpio library<br>
 https://www.npmjs.com/package/@iiot2k/gpiomon
 
->sht40 (sht41 and sht45) temperature and humidity sensor<br>
-https://www.npmjs.com/package/@iiot2k/sht40<br>
-
->hx711 24-Bit analog to digital converter for weight scales<br>
-https://www.npmjs.com/package/@iiot2k/hx711<br>
-
 ### Node-Red Nodes for the Raspberry Pi
 The Nodes can be installed with the npm package manager or palette manager.<br>
 <br>
