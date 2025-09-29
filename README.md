@@ -2,8 +2,6 @@
 
 ### Libraries for the Raspberry Pi and Raspberry Pico
 
-<a href="https://www.buymeacoffee.com/iiot2ka" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-blue.png" height="41" width="174"></a><br>
-
 ### Node.js Libraries for the Raspberry Pi
 The libraries can be installed with the npm package manager.<br>
 <br>
@@ -40,4 +38,5 @@ https://github.com/iiot2k/pico-lib2<br>
 
 >Lib2 - C/C++ Examples<br>
 https://github.com/iiot2k/pico-lib2-examples<br>
+
 
